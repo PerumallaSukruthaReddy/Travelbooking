@@ -11,12 +11,12 @@ import java.util.Date;
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private int numberOfMembers;
-    private Date startDate;
-    private Date endDate;
-    private String packageType;
-    private String modeOfTransport;
+    public Long id;
+    public int numberOfMembers;
+    public Date startDate;
+    public Date endDate;
+    public String packageType;
+    public String modeOfTransport;
 
     // Constructors, getters, and setters
 }

@@ -11,16 +11,15 @@ import java.util.List;
 @RequestMapping("/bookings")
 public class BookingController {
     @Autowired
-    private BookingService bookingService;
-
-    @GetMapping
-    public List<Booking> getAllBookings() {
-        return bookingService.getAllBookings();
-    }
+    public BookingService bookingService;
 
     @PostMapping
     public Booking createBooking(@RequestBody Booking booking) {
         return bookingService.createBooking(booking);
+    }
+    @GetMapping
+    public List<Booking> getAllBookings() {
+        return bookingService.getAllBookings();
     }
 
     @PutMapping("/{id}")

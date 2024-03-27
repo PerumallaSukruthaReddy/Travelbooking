@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class BookingService {
     @Autowired
-    private BookingRepository bookingRepository;
+    public BookingRepository bookingRepository;
 
     public List<Booking> getAllBookings() {
 
